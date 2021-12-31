@@ -124,7 +124,7 @@ const Home: BlitzPage = () => {
           <div className="flex w-4/12">
             <ul className="uppercase space-y-4 mt-20">
               <li
-                className={clsx("border-l-4 pl-3 font-bold text-md pointer", {
+                className={clsx("border-l-4 pl-3 font-bold text-md cursor-pointer", {
                   "border-teal-650": currentStep === null,
                   "border-transparent": currentStep !== null,
                 })}
@@ -135,7 +135,7 @@ const Home: BlitzPage = () => {
               {STEPS.map((step) => (
                 <li
                   key={step}
-                  className={clsx("border-l-4 pl-3 text-gray-450 pointer", {
+                  className={clsx("border-l-4 pl-3 text-gray-450 cursor-pointer", {
                     "border-teal-650": currentStep === step,
                     "border-transparent": currentStep !== step,
                   })}

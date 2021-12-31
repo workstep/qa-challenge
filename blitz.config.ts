@@ -1,11 +1,11 @@
-import { BlitzConfig } from "blitz"
+import { BlitzConfig, sessionMiddleware, simpleRolesIsAuthorized } from "blitz"
 
 const config: BlitzConfig = {
   middleware: [
-    // sessionMiddleware({
-    //   cookiePrefix: "ws-qa-challenge",
-    //   isAuthorized: simpleRolesIsAuthorized,
-    // }),
+    sessionMiddleware({
+      cookiePrefix: "ws-qa-challenge",
+      isAuthorized: simpleRolesIsAuthorized,
+    }),
   ],
   /* Uncomment this to customize the webpack config
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
