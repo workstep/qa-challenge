@@ -66,8 +66,7 @@ Verify that all of the items below satisfy the design and functionality describe
   - [ ] Candidate counts by status are correct
   - [ ] Candidates are appropriately displayed in their respective status lists when navigating through the side nav
   - [ ] Interview dates are correct
-  - [ ] When changing a candidate's status, they are moved into the appropriate status list and the counts on the side nav are updated (local state is being updated correctly)
-    - [ ] **NOTE: for this exercise, no data is actually saved on the server, so reloading the page will reset any changes made**
+  - [ ] When changing a candidate's status, they are moved into the appropriate status list and the counts on the side nav are updated (when refreshing the page, the correct updated status should be reflected in the dropdown for each candidate)
 - [ ] Search & Filter
   - [ ] Searching for candidates works
   - [ ] Search and filter state carries over between views when navigating from the side nav
