@@ -39,16 +39,7 @@ Use both manual and automated QA methods to validate the acceptance criteria has
 
 ### Description
 
-Logged-in hiring managers see a tabbed table called "My Pipeline" that lists job applicants
-in their various interview steps. Implement this table as shown in the following screenshots
-using the following REST API as a data source:
-
-https://my-json-server.typicode.com/workstep/react-challenge-data/candidates
-
-Your app should `PATCH` applicant step updates when they occur, though please note that
-the demo API will not actually persist the changes:
-
-https://my-json-server.typicode.com/workstep/react-challenge-data/candidates/[id]
+Logged-in hiring managers see a tabbed table called "My Pipeline" that lists job applicants in their various interview steps. The implementation should reflect the design below.
 
 ### Design
 
@@ -56,7 +47,7 @@ https://my-json-server.typicode.com/workstep/react-challenge-data/candidates/[id
 
 ### Acceptance criteria
 
-Verify that all of the items below satisfy the design and functionality described in the feature
+Verify that all of the items below satisfy the design and functionality described in the feature.
 
 - [ ] Layout & Styling
   - [ ] Layout and spacing is pixel perfect
