@@ -2,7 +2,20 @@
 
 Please limit yourself to approx. 2-3 hours
 
-### Submitting
+## Running The App
+
+---
+
+- Step 1: Run `yarn install` to install all of the project dependencies
+- Step 2: Run `blitz prisma migrate dev` to set up your local sqlite database
+- Step 3: Run `blitz db seed` to populate the database with candidate data
+- Step 4: Run `blitz dev` to start the server (if you need to change the default port of 3000, append `-p 4000` or the port number of your choosing)
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
+
+## Submitting
+
+---
 
 Branch off `main` locally, complete the challenge, then send us a zip file containing your automated test script and a document outlining the manual QA results.
 
@@ -39,7 +52,7 @@ https://my-json-server.typicode.com/workstep/react-challenge-data/candidates/[id
 
 ### Design
 
-<img src="docs/img/table2.png" width="580">
+<img src="public/table2.png" width="580">
 
 ### Acceptance criteria
 
@@ -58,14 +71,3 @@ Verify that all of the items below satisfy the design and functionality describe
 - [ ] Search & Filter
   - [ ] Searching for candidates works
   - [ ] Search and filter state carries over between views when navigating from the side nav
-
-## Running The App
-
----
-
-Step 1: Run `yarn install` to install all of the project dependencies
-Step 2: Run `blitz prisma migrate dev` to set up your local sqlite database
-Step 3: Run `blitz db seed` to populate the database with candidate data
-Step 4: Run `blitz dev` to start the server (if you need to change the default port of 3000, append `-p 4000` or the port number of your choosing)
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
