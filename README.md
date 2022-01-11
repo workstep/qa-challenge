@@ -10,8 +10,9 @@ This app is built using the [BlitzJS framework](https://blitzjs.com/)
 
 - **Step 1:** Install NodeJS (Version 17): [Download Here](https://nodejs.org/en/download/) OR install with [Homebrew](https://brew.sh/) if on MacOS: `brew install node`
 - **Step 2:** Install Yarn (the package manager used for this project): Run `npm install --global yarn` (for alternative ways to install yarn, see https://classic.yarnpkg.com/lang/en/docs/install)
-- **Step 3:** Install app dependencies: Run `yarn install`
-- **Step 4 (VERY IMPORTANT):** Create 2 new files in the root project directory:
+- **Step 3:** Install Blitzjs globally: Run `yarn global add blitz` or `npm install -g blitz --legacy-peer-deps`
+- **Step 4:** Install app dependencies: Run `yarn install`
+- **Step 5 (VERY IMPORTANT):** Create 2 new files in the root project directory:
   - **File 1:** `.env.local` with the following content: `DATABASE_URL="file:./db.sqlite"`
   - **File 2:** `.env.test.local` with the following content: `DATABASE_URL="file:./db_test.sqlite"`
 
@@ -59,7 +60,7 @@ We have pre-installed Cypress for your convenience.
 
 - (Optional) To open the cypress desktop app, run `cypress open`
 - You can use the pre-generated `cypress/integration/main_spec.e2e.ts` file to write your cypress tests in. Feel free to create additional spec files to organize your tests.
-- Run your tests using `yarn run test:cypress:e2e`
+- To run your tests, in one terminal tab run: `yarn test:cypress:server`, then open a 2nd tab and run `yarn cy:run`
 
 &nbsp;
 
@@ -68,7 +69,7 @@ We have pre-installed Cypress for your convenience.
 Jest comes preconfigured with this app, so no set up required!
 
 - You can use the pre-generated `jest/example.test.ts` file to write your jest tests in (feel free to create your own spec files as well if you'd like to split your tests up. NOTE: your test files should end in `.test.ts` in order for Jest to automatically pick up the files)
-- Run your tests using `yarn run test:jest`
+- Run your tests using `yarn test:jest`
 
 ### Other
 
@@ -87,6 +88,8 @@ Use both manual and automated QA methods to validate the acceptance criteria has
   to validate the requirements below.
 - Manual QA: please list out any discrepencies you see
   between the requirements and the developed feature. Feel free to include annotated screenshots if you'd like.
+
+  **Put your findings in `MANUAL_TEST_DOC.md`**
 
 ## Feature
 

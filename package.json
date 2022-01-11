@@ -10,7 +10,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:server": "blitz prisma migrate deploy && blitz build && blitz start -p 3099",
-    "test:cypress:e2e": "cross-env NODE_ENV=test start-server-and-test test:server http://localhost:3099 cy:run",
+    "test:cypress:server": "cross-env NODE_ENV=test start-server-and-test test:server http://localhost:3099",
     "test:jest": "jest --passWithNoTests",
     "test": "blitz codegen && prisma generate && yarn test:jest && yarn test:e2e",
     "prepare": "husky install"
@@ -52,7 +52,7 @@
     "@types/react": "17.0.38",
     "@types/testing-library__cypress": "5.0.9",
     "cross-env": "7.0.3",
-    "cypress": "9.2.0",
+    "cypress": "9.2.1",
     "eslint": "7.32.0",
     "eslint-plugin-cypress": "2.12.1",
     "husky": "7.0.4",
